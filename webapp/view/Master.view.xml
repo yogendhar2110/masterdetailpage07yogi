@@ -1,0 +1,9 @@
+<mvc:View controllerName="mdd07.controller.Master"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+
+    xmlns="sap.m" height="100%">
+    <Button text="THIS IS CONTENT of 07master123354456567788998ghdfsdaZcvgfvfdfdfdfdff" />
+
+   
+</mvc:View>

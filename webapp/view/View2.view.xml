@@ -1,0 +1,28 @@
+<mvc:View controllerName="mdd07.controller.View2"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+   
+    xmlns="sap.m" xmlns:f="sap.f" height="100%" xmlns:customcontrol="mdd07.control" >
+    <Page>
+    
+<Button  text="THIS IS CONTENT of main field07" press='navto()' />
+    
+    <HBox items="{basemodel>/d/results}"  wrap='Wrap'>
+    <customcontrol:card press='onpressfun' justifyContent="SpaceBetween" flexGrow="3" comname='{basemodel>CompanyCodeName}' client='{basemodel>CreatedByUser}' />
+
+    </HBox>
+    <Table id="mytable" items="{basemodel>/d/results}">
+    <columns>
+    <Column>
+    <Text text="Col1" />
+    </Column>
+    </columns>
+    <ColumnListItem>
+    <cells>
+        <Text text='{basemodel>CompanyCodeName}' />
+    </cells>
+    </ColumnListItem>
+    </Table>
+  
+   </Page>
+</mvc:View>
